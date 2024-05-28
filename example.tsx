@@ -1,18 +1,7 @@
-# use-attribute
-
-To install dependencies:
-
-```bash
-bun install use-attribute
-```
-
-## Usage
-
-```tsx
 import { useAttribute } from ".";
 
 export function Component() {
-    const deg = 15
+  const deg = 15;
   const ref = useAttribute<HTMLDivElement>(
     "style",
     [`--bg: hsl(${deg}deg 60% 80%)`, `--bg-hover: hsl(${deg}deg 80% 80%)`].join(
@@ -26,7 +15,3 @@ export function Component() {
     </div>
   );
 }
-
-...
-
-```
